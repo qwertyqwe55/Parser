@@ -1,0 +1,77 @@
+D->program D2 B
+D2->var I
+D->I1 int;
+D->I1 float;
+D->I1 bool;
+I1->I
+I1->I1 , I
+B->begin S1 { S1 end
+S1->S
+S1->S1 ; S
+S->S1 { S1 }
+S->if E then S [ else S ]
+S->for S to E do S
+S->I ass S
+S->read ( { I } )
+S->write ( { E } )
+E->E1
+E->E1 = E1
+E->E1 > E1
+E->E1 < E1
+E->E1 <> E1
+E->E1 <= E1
+E->E1 >= E1
+E1->T
+E1->T + E1
+E1->T - E1
+E1->T or E1
+T->F
+T->F * T
+F->I
+F->N
+F->L
+F->not F
+T->F / T
+T->F and T
+F->( E )
+L->true
+L->false
+I->C
+I->I C
+I->I R
+N->R
+N->N R
+C->a
+C->b
+C->c
+C->d
+C->e
+C->f
+C->g
+C->h
+C->i
+C->j
+C->k
+C->m
+C->n
+C->o
+C->p
+C->q
+C->r
+C->s
+C->t
+C->u
+C->v
+C->w
+C->y
+C->z
+R->0
+R->1
+R->2
+R->3
+R->4
+R->5
+R->6
+R->7
+R->8
+R->9

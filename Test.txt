@@ -1,0 +1,9 @@
+S->T R
+S->T
+R->+ T R
+R->+ T
+R->- T R
+R->- T
+T->( S )
+T->a
+T->b
